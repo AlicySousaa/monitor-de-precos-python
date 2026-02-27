@@ -1,16 +1,35 @@
-# React + Vite
+# 🔍 Monitor de Preços Real-Time
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um monitor de preços moderno que realiza web scraping em tempo real para extrair informações de produtos (título e preço). O projeto utiliza uma arquitetura separada entre um backend robusto em Python e um frontend reativo em React com Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+### **Frontend**
+* **React.js** (Vite)
+* **Tailwind CSS** (Estilização moderna e responsiva)
+* **Axios** (Comunicação com a API)
+* **Lucide React** (Ícones)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### **Backend**
+* **FastAPI** (Framework web de alta performance)
+* **BeautifulSoup4** (Extração de dados HTML)
+* **Requests** (Requisições HTTP)
+* **Uvicorn** (Servidor ASGI)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Como Executar o Projeto
+
+Para rodar o projeto localmente, você precisará de dois terminais abertos.
+
+### 1. Configurando o Backend (Python)
+Navegue até a pasta do projeto e execute:
+
+```bash
+# Instale as dependências (se ainda não instalou)
+pip install fastapi uvicorn requests beautifulsoup4
+
+# Inicie o servidor (substitua 'monitor' pelo nome do seu arquivo .py)
+python -m uvicorn monitor:app --reload
