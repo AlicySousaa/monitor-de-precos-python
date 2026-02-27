@@ -1,10 +1,10 @@
-# 🔍 Monitor de Preços Real-Time
+#  Monitor de Preços Real-Time
 
 Este é um monitor de preços moderno que realiza web scraping em tempo real para extrair informações de produtos (título e preço). O projeto utiliza uma arquitetura separada entre um backend robusto em Python e um frontend reativo em React com Tailwind CSS.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### **Frontend**
 * **React.js** (Vite)
@@ -20,7 +20,7 @@ Este é um monitor de preços moderno que realiza web scraping em tempo real par
 
 ---
 
-## 🛠️ Como Executar o Projeto
+##  Como Executar o Projeto
 
 Para rodar o projeto localmente, você precisará de dois terminais abertos.
 
